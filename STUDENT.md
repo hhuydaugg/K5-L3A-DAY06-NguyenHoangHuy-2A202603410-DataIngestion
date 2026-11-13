@@ -5,4 +5,4 @@
 - Lớp: L3A / L3B / khác: L3A
 - Chủ đề và corpus: Tài liệu "What's New In Python" bản 3.11, 3.12 và 3.13 (docs.python.org, giấy phép PSF License v2), chia thành 100 đơn vị nội dung, mỗi đơn vị ≥1.500 ký tự
 - Repo bài nộp: https://github.com/hhuydaugg/K5-L3A-DAY06-NguyenHoangHuy-2A202603410-DataIngestion
-- Commit chốt bài: 
+- Commit chốt bài: [`dab12c2df760105a5e098b47c1bf1220b997b550`](https://github.com/hhuydaugg/K5-L3A-DAY06-NguyenHoangHuy-2A202603410-DataIngestion/commit/dab12c2df760105a5e098b47c1bf1220b997b550)
