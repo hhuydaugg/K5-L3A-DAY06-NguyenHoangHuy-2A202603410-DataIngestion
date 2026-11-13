@@ -1,0 +1,344 @@
+position,document_id,page,offset,paragraph_start,strategy,chunk_id,chunk_text
+pos01,whatsnew-3.11,1,1560,"Traceback (most recent call last):
+File ""distance.py"", line 11, in <module>
+print(manhattan_distance(p1, p2))
+^^^^^^^^^^",A,A:whatsnew-3.11:p001:c002," in tracebacks
+
+When printing tracebacks, the interpreter will now point to the exact expression that caused the error, instead of just the line. For example:
+
+Traceback (most recent call last):
+File ""distance.py"", line 11, in <module>
+print(manhattan_distance(p1, p2))
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""distance.py"", line 6, in manhattan_distance
+return abs(point_1.x - point_2.x) + abs(point_1.y - point_2.y)
+^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'x'
+
+Previous versions of the interpreter would point to just the line, making it ambiguous which object was None. These enhanced errors can also be helpful when dealing with deeply nested dict objects and multiple function calls:
+
+Traceback (most recent call last):
+File ""query.py"", line 37, in <module>
+magic_arithmetic('foo')
+"
+pos01,whatsnew-3.11,1,1560,"Traceback (most recent call last):
+File ""distance.py"", line 11, in <module>
+print(manhattan_distance(p1, p2))
+^^^^^^^^^^",B,B:whatsnew-3.11:p001:c002,"Python 3.11 > New Features > PEP 657: Fine-grained error locations in tracebacks
+When printing tracebacks, the interpreter will now point to the exact expression that caused the error, instead of just the line. For example:
+
+Traceback (most recent call last):
+File ""distance.py"", line 11, in <module>
+print(manhattan_distance(p1, p2))
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""distance.py"", line 6, in manhattan_distance
+return abs(point_1.x - point_2.x) + abs(point_1.y - point_2.y)
+^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'x'
+
+Previous versions of the interpreter would point to just the line, making it ambiguous which object was None. These enhanced errors can also be helpful when dealing with deeply nested dict objects and multiple function calls:
+
+Traceback (most recent call last):
+File ""query.py"", line 37, in <module>
+magic_arithmetic('foo')
+File ""query.py"", line 18, in magic_arithmetic
+return add_counts(x) / 25
+^^^^^^^^^^^^^
+File ""query.py"", line 24, in add_counts
+return 25 + query_user(user1) + query_user(user2)
+^^^^^^^^^^^^^^^^^
+File ""query.py"", line 32, in query_user
+return 1 + query_count(db, response['a']['b']['c']['user'], retry=True)
+~~~~~~~~~~~~~~~~~~^^^^^
+TypeError: 'NoneType' object is not subscriptable"
+pos02,whatsnew-3.11,12,1153,sqlite3 exceptions now include the SQLite extended error code as sqlite_errorcode and the SQLite error name as sqlite_er,A,A:whatsnew-3.11:p012:c001,"ors instead of only raising the last error. (Contributed by Irit Katriel in bpo-29980.)
+
+### sqlite3
+
+You can now disable the authorizer by passing None to set_authorizer(). (Contributed by Erlend E. Aasland in bpo-44491.)
+
+Collation name create_collation() can now contain any Unicode character. Collation names with invalid characters now raise UnicodeEncodeError instead of sqlite3.ProgrammingError. (Contributed by Erlend E. Aasland in bpo-44688.)
+
+sqlite3 exceptions now include the SQLite extended error code as sqlite_errorcode and the SQLite error name as sqlite_errorname. (Contributed by Aviv Palivoda, Daniel Shahaf, and Erlend E. Aasland in bpo-16379 and bpo-24139.)
+
+Add setlimit() and getlimit() to sqlite3.Connection for setting and getting SQLite limits by connection basis. (Contribu"
+pos02,whatsnew-3.11,12,1153,sqlite3 exceptions now include the SQLite extended error code as sqlite_errorcode and the SQLite error name as sqlite_er,B,B:whatsnew-3.11:p012:c004,"Python 3.11 > Improved Modules > sqlite3
+You can now disable the authorizer by passing None to set_authorizer(). (Contributed by Erlend E. Aasland in bpo-44491.)
+
+Collation name create_collation() can now contain any Unicode character. Collation names with invalid characters now raise UnicodeEncodeError instead of sqlite3.ProgrammingError. (Contributed by Erlend E. Aasland in bpo-44688.)
+
+sqlite3 exceptions now include the SQLite extended error code as sqlite_errorcode and the SQLite error name as sqlite_errorname. (Contributed by Aviv Palivoda, Daniel Shahaf, and Erlend E. Aasland in bpo-16379 and bpo-24139.)
+
+Add setlimit() and getlimit() to sqlite3.Connection for setting and getting SQLite limits by connection basis. (Contributed by Erlend E. Aasland in bpo-45243.)
+
+sqlite3 now sets sqlite3.threadsafety based on the default threading mode the underlying SQLite library has been compiled with. (Contributed by Erlend E. Aasland in bpo-45613.)
+
+sqlite3 C callbacks now use unraisable exceptions if callback tracebacks are enabled. Users can now register an unraisable hook handler to improve their debug experience. (Contributed by Erlend E. Aasland in bpo-45828.)"
+pos03,whatsnew-3.11,23,931,importlib.util.module_for_loader(),A,A:whatsnew-3.11:p023:c001,"ery.FileFinder.find_module()
+
+importlib.machinery.FrozenImporter.find_module()
+
+importlib.machinery.FrozenLoader.module_repr()
+
+importlib.machinery.PathFinder.find_module()
+
+importlib.machinery.WindowsRegistryFinder.find_module()
+
+importlib.util.module_for_loader()
+
+importlib.util.set_loader_wrapper()
+
+importlib.util.set_package_wrapper()
+
+pkgutil.ImpImporter
+
+pkgutil.ImpLoader
+
+pathlib.Path.link_to()
+
+sqlite3.enable_shared_cache()
+
+sqlite3.OptimizedUnicode()
+
+PYTHONTHREADDEBUG environment variable
+
+The following deprecated aliases in unittest:
+
+Deprecated alias | Method Name | Deprecated in
+
+failUnless | assertTrue() | 3.1
+
+failIf | assertFalse() | 3.1
+
+failUnlessEqual | assertEqual() | 3.1
+
+failIfEqual | assertNotEqual() | 3.1
+
+failUnlessAlmostEqual | assertAlmostEqual() | 3.1
+
+failIfAlm"
+pos03,whatsnew-3.11,23,931,importlib.util.module_for_loader(),B,B:whatsnew-3.11:p023:c000,"Python 3.11 > Pending Removal in Python 3.12
+The following Python APIs have been deprecated in earlier Python releases, and will be removed in Python 3.12.
+
+C APIs pending removal are listed separately.
+
+The asynchat module
+
+The asyncore module
+
+The entire distutils package
+
+The imp module
+
+The typing.io namespace
+
+The typing.re namespace
+
+cgi.log()
+
+importlib.find_loader()
+
+importlib.abc.Loader.module_repr()
+
+importlib.abc.MetaPathFinder.find_module()
+
+importlib.abc.PathEntryFinder.find_loader()
+
+importlib.abc.PathEntryFinder.find_module()
+
+importlib.machinery.BuiltinImporter.find_module()
+
+importlib.machinery.BuiltinLoader.module_repr()
+
+importlib.machinery.FileFinder.find_loader()
+
+importlib.machinery.FileFinder.find_module()
+
+importlib.machinery.FrozenImporter.find_module()
+
+importlib.machinery.FrozenLoader.module_repr()
+
+importlib.machinery.PathFinder.find_module()
+
+importlib.machinery.WindowsRegistryFinder.find_module()
+
+importlib.util.module_for_loader()
+
+importlib.util.set_loader_wrapper()
+
+importlib.util.set_package_wrapper()
+
+pkgutil.ImpImporter
+
+pkgutil.ImpLoader
+
+pathlib.Path.link_to()
+
+sqlite3.enable_shared_cache()
+
+sqlite3.OptimizedUnicode()
+
+PYTHONTHREADDEBUG environment variable"
+pos04,whatsnew-3.12,3,1719,">>> f""This is the playlist: {"", "".join([
+... 'Take me back to Eden', # My, my, those eyes like fire
+... 'Alkaline', # No",A,A:whatsnew-3.12:p003:c002," 3.11, f-string expressions must be defined in a single line, even if the expression within the f-string could normally span multiple lines (like literal lists being defined over multiple lines), making them harder to read. In Python 3.12 you can now define f-strings spanning multiple lines, and add inline comments:
+
+>>> f""This is the playlist: {"", "".join([
+... 'Take me back to Eden', # My, my, those eyes like fire
+... 'Alkaline', # Not acid nor alkaline
+... 'Ascensionism' # Take to the broken skies at last
+... ])}""
+'This is the playlist: Take me back to Eden, Alkaline, Ascensionism'
+
+Backslashes and unicode characters: before Python 3.12 f-string expressions couldn’t contain any \ character. This also affected unicode escape sequences (such as \N{snowman}) as these contain the \N part tha"
+pos04,whatsnew-3.12,3,1719,">>> f""This is the playlist: {"", "".join([
+... 'Take me back to Eden', # My, my, those eyes like fire
+... 'Alkaline', # No",B,B:whatsnew-3.12:p003:c001,"Python 3.12 > New Features > PEP 701: Syntactic formalization of f-strings
+As now f-strings can contain any valid Python expression inside expression components, it is now possible to nest f-strings arbitrarily:
+
+>>> f""{f""{f""{f""{f""{f""{1+1}""}""}""}""}""}""
+'2'
+
+Multi-line expressions and comments: In Python 3.11, f-string expressions must be defined in a single line, even if the expression within the f-string could normally span multiple lines (like literal lists being defined over multiple lines), making them harder to read. In Python 3.12 you can now define f-strings spanning multiple lines, and add inline comments:
+
+>>> f""This is the playlist: {"", "".join([
+... 'Take me back to Eden', # My, my, those eyes like fire
+... 'Alkaline', # Not acid nor alkaline
+... 'Ascensionism' # Take to the broken skies at last
+... ])}""
+'This is the playlist: Take me back to Eden, Alkaline, Ascensionism'
+
+Backslashes and unicode characters: before Python 3.12 f-string expressions couldn’t contain any \ character. This also affected unicode escape sequences (such as \N{snowman}) as these contain the \N part that previously could not be part of expression components of f-strings. Now, you can define expressions like this:"
+pos05,whatsnew-3.12,14,872,Remove wstr and wstr_length members from Unicode objects. It reduces object size by 8 or 16 bytes on 64bit platform. (PE,A,A:whatsnew-3.12:p014:c001,"9.869s
+
+OK (skipped=3)
+
+(Contributed by Giampaolo Rodola in gh-48330)
+
+### uuid
+
+Add a command-line interface. (Contributed by Adam Chhina in gh-88597.)
+
+## Optimizations
+
+Remove wstr and wstr_length members from Unicode objects. It reduces object size by 8 or 16 bytes on 64bit platform. (PEP 623) (Contributed by Inada Naoki in gh-92536.)
+
+Add experimental support for using the BOLT binary optimizer in the build process, which improves performance by 1-5%. (Contributed by Kevin Modzelewski in gh-90536 and tuned by Donghee Na in gh-101525)
+
+Speed up the regular expression substitution (functions re.sub() and re.subn() and corresponding re.Pattern methods) for replacement strings containing group references by 2–3 times. (Contributed by Serhiy Storchaka in gh-91524.)
+
+Speed up asyncio.Task c"
+pos05,whatsnew-3.12,14,872,Remove wstr and wstr_length members from Unicode objects. It reduces object size by 8 or 16 bytes on 64bit platform. (PE,B,B:whatsnew-3.12:p014:c003,"Python 3.12 > Optimizations
+Remove wstr and wstr_length members from Unicode objects. It reduces object size by 8 or 16 bytes on 64bit platform. (PEP 623) (Contributed by Inada Naoki in gh-92536.)
+
+Add experimental support for using the BOLT binary optimizer in the build process, which improves performance by 1-5%. (Contributed by Kevin Modzelewski in gh-90536 and tuned by Donghee Na in gh-101525)
+
+Speed up the regular expression substitution (functions re.sub() and re.subn() and corresponding re.Pattern methods) for replacement strings containing group references by 2–3 times. (Contributed by Serhiy Storchaka in gh-91524.)
+
+Speed up asyncio.Task creation by deferring expensive string formatting. (Contributed by Itamar Oren in gh-103793.)
+
+The tokenize.tokenize() and tokenize.generate_tokens() functions are up to 64% faster as a side effect of the changes required to cover PEP 701 in the tokenize module. (Contributed by Marta Gómez Macías and Pablo Galindo in gh-102856.)
+
+Speed up super() method calls and attribute loads via the new LOAD_SUPER_ATTR instruction. (Contributed by Carl Meyer and Vladimir Matveev in gh-103497.)"
+pos06,whatsnew-3.12,25,3514,The Py_TPFLAGS_MANAGED_DICT and Py_TPFLAGS_MANAGED_WEAKREF flags have been added. This allows extensions classes to supp,A,A:whatsnew-3.12:p025:c004,"(), which generalizes the existing PyType_FromModuleAndSpec() using an additional metaclass argument. (Contributed by Wenzel Jakob in gh-93012.)
+
+API for creating objects that can be called using the vectorcall protocol was added to the Limited API:
+
+Py_TPFLAGS_HAVE_VECTORCALL
+
+PyVectorcall_NARGS()
+
+PyVectorcall_Call()
+
+vectorcallfunc
+
+The Py_TPFLAGS_HAVE_VECTORCALL flag is now removed from a class when the class’s __call__() method is reassigned. This makes vectorcall safe to use with mutable types (i.e. heap types without the immutable flag, Py_TPFLAGS_IMMUTABLETYPE). Mutable types that do not override tp_call now inherit the Py_TPFLAGS_HAVE_VECTORCALL flag. (Contributed by Petr Viktorin in gh-93274.)
+
+The Py_TPFLAGS_MANAGED_DICT and Py_TPFLAGS_MANAGED_WEAKREF flags have been added. This"
+pos06,whatsnew-3.12,25,3514,The Py_TPFLAGS_MANAGED_DICT and Py_TPFLAGS_MANAGED_WEAKREF flags have been added. This allows extensions classes to supp,B,B:whatsnew-3.12:p025:c004,"Python 3.12 > C API Changes > New Features
+The Py_TPFLAGS_MANAGED_DICT and Py_TPFLAGS_MANAGED_WEAKREF flags have been added. This allows extensions classes to support object __dict__ and weakrefs with less bookkeeping, using less memory and with faster access.
+
+API for performing calls using the vectorcall protocol was added to the Limited API:
+
+PyObject_Vectorcall()
+
+PyObject_VectorcallMethod()
+
+PY_VECTORCALL_ARGUMENTS_OFFSET
+
+This means that both the incoming and outgoing ends of the vector call protocol are now available in the Limited API. (Contributed by Wenzel Jakob in gh-98586.)
+
+Add two new public functions, PyEval_SetProfileAllThreads() and PyEval_SetTraceAllThreads(), that allow to set tracing and profiling functions in all running threads in addition to the calling one. (Contributed by Pablo Galindo in gh-93503.)
+
+Add new function PyFunction_SetVectorcall() to the C API which sets the vectorcall field of a given PyFunctionObject. (Contributed by Andrew Frost in gh-92257.)"
+pos07,whatsnew-3.13,5,562,This change to the semantics of locals() in optimized scopes also affects the default behavior of code execution functio,A,A:whatsnew-3.13:p005:c000,"### Defined mutation semantics for locals()
+
+Historically, the expected result of mutating the return value of locals() has been left to individual Python implementations to define. Starting from Python 3.13, PEP 667 standardises the historical behavior of CPython for most code execution scopes, but changes optimized scopes (functions, generators, coroutines, comprehensions, and generator expressions) to explicitly return independent snapshots of the currently assigned local variables, including locally referenced nonlocal variables captured in closures.
+
+This change to the semantics of locals() in optimized scopes also affects the default behavior of code execution functions that implicitly target locals() if no explicit namespace is provided (such as exec() and eval()). In previous versi"
+pos07,whatsnew-3.13,5,562,This change to the semantics of locals() in optimized scopes also affects the default behavior of code execution functio,B,B:whatsnew-3.13:p005:c001,"Python 3.13 > New Features > Defined mutation semantics for locals()
+This change to the semantics of locals() in optimized scopes also affects the default behavior of code execution functions that implicitly target locals() if no explicit namespace is provided (such as exec() and eval()). In previous versions, whether or not changes could be accessed by calling locals() after calling the code execution function was implementation-dependent. In CPython specifically, such code would typically appear to work as desired, but could sometimes fail in optimized scopes based on other code (including debuggers and code execution tracing tools) potentially resetting the shared snapshot in that scope. Now, the code will always run against an independent snapshot of the local variables in optimized scopes, and hence the changes will never be visible in subsequent calls to locals(). To access the changes made in these cases, an explicit namespace reference must now be passed to the relevant function. Alternatively, it may make sense to update affected code to use a higher level code execution API that returns the resulting code execution namespace (e.g. runpy.run_path() when executing Python files from disk)."
+pos08,whatsnew-3.13,16,786,Add kde() for kernel density estimation. This makes it possible to estimate a continuous probability density function fr,A,A:whatsnew-3.13:p016:c000,"### sqlite3
+
+A ResourceWarning is now emitted if a Connection object is not closed explicitly. (Contributed by Erlend E. Aasland in gh-105539.)
+
+Add the filter keyword-only parameter to Connection.iterdump() for filtering database objects to dump. (Contributed by Mariusz Felisiak in gh-91602.)
+
+### ssl
+
+The create_default_context() API now includes VERIFY_X509_PARTIAL_CHAIN and VERIFY_X509_STRICT in its default flags.
+
+Note
+
+VERIFY_X509_STRICT may reject pre-RFC 5280 or malformed certificates that the underlying OpenSSL implementation might otherwise accept. Whilst disabling this is not recommended, you can do so using:
+
+import ssl
+
+ctx = ssl.create_default_context()
+ctx.verify_flags &= ~ssl.VERIFY_X509_STRICT
+
+(Contributed by William Woodruff in gh-112389.)
+
+### statistics
+
+Add kde() for "
+pos08,whatsnew-3.13,16,786,Add kde() for kernel density estimation. This makes it possible to estimate a continuous probability density function fr,B,B:whatsnew-3.13:p016:c002,"Python 3.13 > Improved Modules > statistics
+Add kde() for kernel density estimation. This makes it possible to estimate a continuous probability density function from a fixed number of discrete samples. (Contributed by Raymond Hettinger in gh-115863.)
+
+Add kde_random() for sampling from an estimated probability density function created by kde(). (Contributed by Raymond Hettinger in gh-115863.)"
+pos09,whatsnew-3.13,27,887,"Before Python 3.14, old-style unions were implemented using the private class typing._UnionGenericAlias. This class is n",A,A:whatsnew-3.13:p027:c001," were also never understood as subtypes of ByteString (either at runtime or by static type checkers).
+
+See PEP 688 for more details. (Contributed by Shantanu Jain in gh-91896.)
+
+typing:
+
+Before Python 3.14, old-style unions were implemented using the private class typing._UnionGenericAlias. This class is no longer needed for the implementation, but it has been retained for backward compatibility, with removal scheduled for Python 3.17. Users should use documented introspection helpers like typing.get_origin() and typing.get_args() instead of relying on private implementation details.
+
+typing.ByteString, deprecated since Python 3.9, is scheduled for removal in Python 3.17.
+
+Use isinstance(obj, collections.abc.Buffer) to test if obj implements the buffer protocol at runtime. For use in type "
+pos09,whatsnew-3.13,27,887,"Before Python 3.14, old-style unions were implemented using the private class typing._UnionGenericAlias. This class is n",B,B:whatsnew-3.13:p027:c001,"Python 3.13 > New Deprecations > Pending removal in Python 3.17
+Before Python 3.14, old-style unions were implemented using the private class typing._UnionGenericAlias. This class is no longer needed for the implementation, but it has been retained for backward compatibility, with removal scheduled for Python 3.17. Users should use documented introspection helpers like typing.get_origin() and typing.get_args() instead of relying on private implementation details.
+
+typing.ByteString, deprecated since Python 3.9, is scheduled for removal in Python 3.17.
+
+Use isinstance(obj, collections.abc.Buffer) to test if obj implements the buffer protocol at runtime. For use in type annotations, either use Buffer or a union that explicitly specifies the types your code supports (e.g., bytes | bytearray | memoryview).
+
+ByteString was originally intended to be an abstract class that would serve as a supertype of both bytes and bytearray. However, since the ABC never had any methods, knowing that an object was an instance of ByteString never actually told you anything useful about the object. Other common buffer types such as memoryview were also never understood as subtypes of ByteString (either at runtime or by static type checkers)."
+pos10,whatsnew-3.13,38,1016,extractall() now skips fixing up directory attributes when a directory was removed or replaced by another kind of file. ,A,A:whatsnew-3.13:p038:c001,"undError will be re-raised; the resulting path can be missing but it will be free of symlinks. (Contributed by Petr Viktorin for CVE 2025-4517.)
+
+### tarfile
+
+data_filter() now normalizes symbolic link targets in order to avoid path traversal attacks. (Contributed by Petr Viktorin in gh-127987 and CVE 2025-4138.)
+
+extractall() now skips fixing up directory attributes when a directory was removed or replaced by another kind of file. (Contributed by Petr Viktorin in gh-127987 and CVE 2024-12718.)
+
+extract() and extractall() now (re-)apply the extraction filter when substituting a link (hard or symbolic) with a copy of another archive member, and when fixing up directory attributes. The former raises a new exception, LinkFallbackError. (Contributed by Petr Viktorin for CVE 2025-4330 and CVE 2"
+pos10,whatsnew-3.13,38,1016,extractall() now skips fixing up directory attributes when a directory was removed or replaced by another kind of file. ,B,B:whatsnew-3.13:p038:c003,"Python 3.13 > Notable changes in 3.13.4 > tarfile
+data_filter() now normalizes symbolic link targets in order to avoid path traversal attacks. (Contributed by Petr Viktorin in gh-127987 and CVE 2025-4138.)
+
+extractall() now skips fixing up directory attributes when a directory was removed or replaced by another kind of file. (Contributed by Petr Viktorin in gh-127987 and CVE 2024-12718.)
+
+extract() and extractall() now (re-)apply the extraction filter when substituting a link (hard or symbolic) with a copy of another archive member, and when fixing up directory attributes. The former raises a new exception, LinkFallbackError. (Contributed by Petr Viktorin for CVE 2025-4330 and CVE 2024-12718.)
+
+extract() and extractall() no longer extract rejected members when errorlevel() is zero. (Contributed by Matt Prodani and Petr Viktorin in gh-112887 and CVE 2025-4435.)"

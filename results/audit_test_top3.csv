@@ -1,0 +1,362 @@
+strategy,id,rank,chunk_id,document_id,page,version,section,subsection,score,auto_evidence_hit,filter_given,follows_filter,metadata_ok,metadata_check,text
+A,t01,1,A:whatsnew-3.12:p001:c000,whatsnew-3.12,1,3.12,What’s New In Python 3.12,,0.7967,False,"{""version"": ""3.13""}",False,True,ok,"# What’s New In Python 3.12
+
+Editor:
+
+Adam Turner
+
+This article explains the new features in Python 3.12, compared to 3.11. Python 3.12 was released on October 2, 2023. For full details, see the changelog.
+
+See also
+
+PEP 693 – Python 3.12 Release Schedule
+
+## Summary – Release highlights
+
+Python 3.12 is a stable release of the Python programming language, with a mix of changes to the language and the standard library. The library changes focus on cleaning up deprecated APIs, usability, and correctness. Of note, the distutils package has been removed from the standard library. Filesystem support in os and pathlib has seen a number of improvements, and several modules have better performance.
+
+The language changes focus on usability, as f-strings have had many limitations removed and ‘Did yo"
+A,t01,2,A:whatsnew-3.13:p001:c000,whatsnew-3.13,1,3.13,What’s New In Python 3.13,,0.7888,True,"{""version"": ""3.13""}",True,True,ok,"# What’s New In Python 3.13
+
+Editors:
+
+Adam Turner and Thomas Wouters
+
+This article explains the new features in Python 3.13, compared to 3.12. Python 3.13 was released on October 7, 2024. For full details, see the changelog.
+
+See also
+
+PEP 719 – Python 3.13 Release Schedule
+
+## Summary – Release Highlights
+
+Python 3.13 is the latest stable release of the Python programming language, with a mix of changes to the language, the implementation and the standard library. The biggest changes include a new interactive interpreter, experimental support for running in a free-threaded mode (PEP 703), and a Just-In-Time compiler (PEP 744).
+
+Error messages continue to improve, with tracebacks now highlighted in color by default. The locals() builtin now has defined semantics for changing the returned "
+A,t01,3,A:whatsnew-3.11:p001:c000,whatsnew-3.11,1,3.11,What’s New In Python 3.11,,0.7694,False,"{""version"": ""3.13""}",False,True,ok,"# What’s New In Python 3.11
+
+Editor:
+
+Pablo Galindo Salgado
+
+This article explains the new features in Python 3.11, compared to 3.10. Python 3.11 was released on October 24, 2022. For full details, see the changelog.
+
+## Summary – Release highlights
+
+Python 3.11 is between 10-60% faster than Python 3.10. On average, we measured a 1.25x speedup on the standard benchmark suite. See Faster CPython for details.
+
+New syntax features:
+
+PEP 654: Exception Groups and except*
+
+New built-in features:
+
+PEP 678: Exceptions can be enriched with notes
+
+New standard library modules:
+
+PEP 680: tomllib — Support for parsing TOML in the Standard Library
+
+Interpreter improvements:
+
+PEP 657: Fine-grained error locations in tracebacks
+
+New -P command line option and PYTHONSAFEPATH environment variable to disab"
+B,t01,1,B:whatsnew-3.13:p001:c001,whatsnew-3.13,1,3.13,Summary – Release Highlights,,0.7943,False,"{""version"": ""3.13""}",True,True,ok,"Python 3.13 > Summary – Release Highlights
+Python 3.13 is the latest stable release of the Python programming language, with a mix of changes to the language, the implementation and the standard library. The biggest changes include a new interactive interpreter, experimental support for running in a free-threaded mode (PEP 703), and a Just-In-Time compiler (PEP 744).
+
+Error messages continue to improve, with tracebacks now highlighted in color by default. The locals() builtin now has defined semantics for changing the returned mapping, and type parameters now support default values.
+
+The library changes contain removal of deprecated APIs and modules, as well as the usual improvements in user-friendliness and correctness. Several legacy standard library modules have now been removed following their deprecation in Python 3.11 (PEP 594)."
+B,t01,2,B:whatsnew-3.12:p001:c000,whatsnew-3.12,1,3.12,What’s New In Python 3.12,,0.7938,False,"{""version"": ""3.13""}",False,True,ok,"Python 3.12 > What’s New In Python 3.12
+Editor:
+
+Adam Turner
+
+This article explains the new features in Python 3.12, compared to 3.11. Python 3.12 was released on October 2, 2023. For full details, see the changelog.
+
+See also
+
+PEP 693 – Python 3.12 Release Schedule"
+B,t01,3,B:whatsnew-3.11:p001:c000,whatsnew-3.11,1,3.11,What’s New In Python 3.11,,0.7876,False,"{""version"": ""3.13""}",False,True,ok,"Python 3.11 > What’s New In Python 3.11
+Editor:
+
+Pablo Galindo Salgado
+
+This article explains the new features in Python 3.11, compared to 3.10. Python 3.11 was released on October 24, 2022. For full details, see the changelog."
+C,t01,1,B:whatsnew-3.13:p001:c001,whatsnew-3.13,1,3.13,Summary – Release Highlights,,0.7943,False,"{""version"": ""3.13""}",True,True,ok,"Python 3.13 > Summary – Release Highlights
+Python 3.13 is the latest stable release of the Python programming language, with a mix of changes to the language, the implementation and the standard library. The biggest changes include a new interactive interpreter, experimental support for running in a free-threaded mode (PEP 703), and a Just-In-Time compiler (PEP 744).
+
+Error messages continue to improve, with tracebacks now highlighted in color by default. The locals() builtin now has defined semantics for changing the returned mapping, and type parameters now support default values.
+
+The library changes contain removal of deprecated APIs and modules, as well as the usual improvements in user-friendliness and correctness. Several legacy standard library modules have now been removed following their deprecation in Python 3.11 (PEP 594)."
+C,t01,2,B:whatsnew-3.13:p001:c000,whatsnew-3.13,1,3.13,What’s New In Python 3.13,,0.7832,True,"{""version"": ""3.13""}",True,True,ok,"Python 3.13 > What’s New In Python 3.13
+Editors:
+
+Adam Turner and Thomas Wouters
+
+This article explains the new features in Python 3.13, compared to 3.12. Python 3.13 was released on October 7, 2024. For full details, see the changelog.
+
+See also
+
+PEP 719 – Python 3.13 Release Schedule"
+C,t01,3,B:whatsnew-3.13:p001:c006,whatsnew-3.13,1,3.13,Summary – Release Highlights,,0.7815,False,"{""version"": ""3.13""}",True,True,ok,"Python 3.13 > Summary – Release Highlights
+Python 3.13 and later have two years of full support, followed by three years of security fixes."
+A,t02,1,A:whatsnew-3.12:p012:c002,whatsnew-3.12,12,3.12,Improved Modules,tempfile,0.8898,True,"{""version"": ""3.12""}",True,True,ok,"empfile
+
+The tempfile.NamedTemporaryFile function has a new optional parameter delete_on_close (Contributed by Evgeny Zorin in gh-58451.)
+
+tempfile.mkdtemp() now always returns an absolute path, even if the argument provided to the dir parameter is a relative path.
+
+As of 3.12.4 on Windows, the default mode 0o700 used by tempfile.mkdtemp() now limits access to the new directory due to changes to os.mkdir(). This is a mitigation for CVE 2024-4030. (Contributed by Steve Dower in gh-118486.)"
+A,t02,2,A:whatsnew-3.13:p013:c002,whatsnew-3.13,13,3.13,Improved Modules,os,0.7378,False,"{""version"": ""3.12""}",False,True,ok,"support passing a mode value of 0o700 to apply access control to the new directory. This implicitly affects tempfile.mkdtemp() and is a mitigation for CVE 2024-4030. Other values for mode continue to be ignored. (Contributed by Steve Dower in gh-118486.)
+
+posix_spawn() now accepts None for the env argument, which makes the newly spawned process use the current process environment. (Contributed by Jakub Kulik in gh-113119.)
+
+posix_spawn() can now use the POSIX_SPAWN_CLOSEFROM attribute in the file_actions parameter on platforms that support posix_spawn_file_actions_addclosefrom_np(). (Contributed by Jakub Kulik in gh-113117.)"
+A,t02,3,A:whatsnew-3.11:p011:c002,whatsnew-3.11,11,3.11,Improved Modules,os,0.7262,False,"{""version"": ""3.12""}",False,True,ok," os.urandom() now uses BCryptGenRandom(), instead of CryptGenRandom() which is deprecated. (Contributed by Donghee Na in bpo-44611.)
+
+As of 3.11.10, os.mkdir() and os.makedirs() on Windows now support passing a mode value of 0o700 to apply access control to the new directory. This implicitly affects tempfile.mkdtemp() and is a mitigation for CVE-2024-4030. Other values for mode continue to be ignored. (Contributed by Steve Dower in gh-118486.)"
+B,t02,1,B:whatsnew-3.12:p012:c003,whatsnew-3.12,12,3.12,Improved Modules,tempfile,0.8774,True,"{""version"": ""3.12""}",True,True,ok,"Python 3.12 > Improved Modules > tempfile
+The tempfile.NamedTemporaryFile function has a new optional parameter delete_on_close (Contributed by Evgeny Zorin in gh-58451.)
+
+tempfile.mkdtemp() now always returns an absolute path, even if the argument provided to the dir parameter is a relative path.
+
+As of 3.12.4 on Windows, the default mode 0o700 used by tempfile.mkdtemp() now limits access to the new directory due to changes to os.mkdir(). This is a mitigation for CVE 2024-4030. (Contributed by Steve Dower in gh-118486.)"
+B,t02,2,B:whatsnew-3.13:p017:c001,whatsnew-3.13,17,3.13,Improved Modules,tempfile,0.7795,False,"{""version"": ""3.12""}",False,True,ok,"Python 3.13 > Improved Modules > tempfile
+On Windows, the default mode 0o700 used by tempfile.mkdtemp() now limits access to the new directory due to changes to os.mkdir(). This is a mitigation for CVE 2024-4030. (Contributed by Steve Dower in gh-118486.)"
+B,t02,3,B:whatsnew-3.11:p013:c003,whatsnew-3.11,13,3.11,Improved Modules,tempfile,0.746,False,"{""version"": ""3.12""}",False,True,ok,"Python 3.11 > Improved Modules > tempfile
+SpooledTemporaryFile objects now fully implement the methods of io.BufferedIOBase or io.TextIOBase (depending on file mode). This lets them work correctly with APIs that expect file-like objects, such as compression modules. (Contributed by Carey Metcalfe in gh-70363.)
+
+As of 3.11.10 on Windows, the default mode 0o700 used by tempfile.mkdtemp() now limits access to the new directory due to changes to os.mkdir(). This is a mitigation for CVE-2024-4030. (Contributed by Steve Dower in gh-118486.)"
+C,t02,1,B:whatsnew-3.12:p012:c003,whatsnew-3.12,12,3.12,Improved Modules,tempfile,0.8774,True,"{""version"": ""3.12""}",True,True,ok,"Python 3.12 > Improved Modules > tempfile
+The tempfile.NamedTemporaryFile function has a new optional parameter delete_on_close (Contributed by Evgeny Zorin in gh-58451.)
+
+tempfile.mkdtemp() now always returns an absolute path, even if the argument provided to the dir parameter is a relative path.
+
+As of 3.12.4 on Windows, the default mode 0o700 used by tempfile.mkdtemp() now limits access to the new directory due to changes to os.mkdir(). This is a mitigation for CVE 2024-4030. (Contributed by Steve Dower in gh-118486.)"
+C,t02,2,B:whatsnew-3.12:p009:c003,whatsnew-3.12,9,3.12,Improved Modules,os,0.7179,False,"{""version"": ""3.12""}",True,True,ok,"Python 3.12 > Improved Modules > os
+As of 3.12.4, os.mkdir() and os.makedirs() on Windows now support passing a mode value of 0o700 to apply access control to the new directory. This implicitly affects tempfile.mkdtemp() and is a mitigation for CVE 2024-4030. Other values for mode continue to be ignored. (Contributed by Steve Dower in gh-118486.)"
+C,t02,3,B:whatsnew-3.12:p031:c002,whatsnew-3.12,31,3.12,Notable changes in 3.12.10,tarfile,0.6786,False,"{""version"": ""3.12""}",True,True,ok,"Python 3.12 > Notable changes in 3.12.10 > tarfile
+data_filter() now normalizes symbolic link targets in order to avoid path traversal attacks. (Contributed by Petr Viktorin in gh-127987 and CVE 2025-4138.)
+
+extractall() now skips fixing up directory attributes when a directory was removed or replaced by another kind of file. (Contributed by Petr Viktorin in gh-127987 and CVE 2024-12718.)
+
+extract() and extractall() now (re-)apply the extraction filter when substituting a link (hard or symbolic) with a copy of another archive member, and when fixing up directory attributes. The former raises a new exception, LinkFallbackError. (Contributed by Petr Viktorin for CVE 2025-4330 and CVE 2024-12718.)
+
+extract() and extractall() no longer extract rejected members when errorlevel() is zero. (Contributed by Matt Prodani and Petr Viktorin in gh-112887 and CVE 2025-4435.)"
+A,t03,1,A:whatsnew-3.13:p003:c000,whatsnew-3.13,3,3.13,New Features,Free-threaded CPython,0.8461,True,,,True,ok,"### Free-threaded CPython
+
+CPython now has experimental support for running in a free-threaded mode, with the global interpreter lock (GIL) disabled. This is an experimental feature and therefore is not enabled by default. The free-threaded mode requires a different executable, usually called python3.13t or python3.13t.exe. Pre-built binaries marked as free-threaded can be installed as part of the official Windows and macOS installers, or CPython can be built from source with the --disable-gil option.
+
+Free-threaded execution allows for full utilization of the available processing power by running threads in parallel on available CPU cores. While not all software will benefit from this automatically, programs designed with threading in mind will run faster on multi-core hardware. The free-"
+A,t03,2,A:whatsnew-3.13:p003:c001,whatsnew-3.13,3,3.13,New Features,Free-threaded CPython,0.8398,False,,,True,ok,"atically, programs designed with threading in mind will run faster on multi-core hardware. The free-threaded mode is experimental and work is ongoing to improve it: expect some bugs and a substantial single-threaded performance hit. Free-threaded builds of CPython support optionally running with the GIL enabled at runtime using the environment variable PYTHON_GIL or the command-line option -X gil=1.
+
+To check if the current interpreter supports free-threading, python -VV and sys.version contain “experimental free-threading build”. The new sys._is_gil_enabled() function can be used to check whether the GIL is actually disabled in the running process.
+
+C-API extension modules need to be built specifically for the free-threaded build. Extensions that support running with the GIL disabled shou"
+A,t03,3,A:whatsnew-3.13:p003:c002,whatsnew-3.13,3,3.13,New Features,Free-threaded CPython,0.8169,False,,,True,ok,"specifically for the free-threaded build. Extensions that support running with the GIL disabled should use the Py_mod_gil slot. Extensions using single-phase init should use PyUnstable_Module_SetGIL() to indicate whether they support running with the GIL disabled. Importing C extensions that don’t use these mechanisms will cause the GIL to be enabled, unless the GIL was explicitly disabled with the PYTHON_GIL environment variable or the -X gil=0 option. pip 24.1 or newer is required to install packages with C extensions in the free-threaded build.
+
+This work was made possible thanks to many individuals and organizations, including the large community of contributors to Python and third-party projects to test and enable free-threading support. Notable contributors include: Sam Gross, Ken Ji"
+B,t03,1,B:whatsnew-3.13:p003:c000,whatsnew-3.13,3,3.13,New Features,Free-threaded CPython,0.8469,True,,,True,ok,"Python 3.13 > New Features > Free-threaded CPython
+CPython now has experimental support for running in a free-threaded mode, with the global interpreter lock (GIL) disabled. This is an experimental feature and therefore is not enabled by default. The free-threaded mode requires a different executable, usually called python3.13t or python3.13t.exe. Pre-built binaries marked as free-threaded can be installed as part of the official Windows and macOS installers, or CPython can be built from source with the --disable-gil option.
+
+Free-threaded execution allows for full utilization of the available processing power by running threads in parallel on available CPU cores. While not all software will benefit from this automatically, programs designed with threading in mind will run faster on multi-core hardware. The free-threaded mode is experimental and work is ongoing to improve it: expect some bugs and a substantial single-threaded performance hit. Free-threaded builds of CPython support optionally running with the GIL enabled at runtime using the environment variable PYTHON_GIL or the command-line option -X gil=1."
+B,t03,2,B:whatsnew-3.13:p003:c001,whatsnew-3.13,3,3.13,New Features,Free-threaded CPython,0.833,False,,,True,ok,"Python 3.13 > New Features > Free-threaded CPython
+To check if the current interpreter supports free-threading, python -VV and sys.version contain “experimental free-threading build”. The new sys._is_gil_enabled() function can be used to check whether the GIL is actually disabled in the running process.
+
+C-API extension modules need to be built specifically for the free-threaded build. Extensions that support running with the GIL disabled should use the Py_mod_gil slot. Extensions using single-phase init should use PyUnstable_Module_SetGIL() to indicate whether they support running with the GIL disabled. Importing C extensions that don’t use these mechanisms will cause the GIL to be enabled, unless the GIL was explicitly disabled with the PYTHON_GIL environment variable or the -X gil=0 option. pip 24.1 or newer is required to install packages with C extensions in the free-threaded build."
+B,t03,3,B:whatsnew-3.13:p003:c002,whatsnew-3.13,3,3.13,New Features,Free-threaded CPython,0.7188,False,,,True,ok,"Python 3.13 > New Features > Free-threaded CPython
+This work was made possible thanks to many individuals and organizations, including the large community of contributors to Python and third-party projects to test and enable free-threading support. Notable contributors include: Sam Gross, Ken Jin, Donghee Na, Itamar Oren, Matt Page, Brett Simmers, Dino Viehland, Carl Meyer, Nathan Goldbaum, Ralf Gommers, Lysandros Nikolaou, and many others. Many of these contributors are employed by Meta, which has provided significant engineering resources to support this project.
+
+See also
+
+PEP 703 “Making the Global Interpreter Lock Optional in CPython” contains rationale and information surrounding this work.
+
+Porting Extension Modules to Support Free-Threading: A community-maintained porting guide for extension authors."
+C,t03,1,B:whatsnew-3.13:p003:c000,whatsnew-3.13,3,3.13,New Features,Free-threaded CPython,0.8469,True,,,True,ok,"Python 3.13 > New Features > Free-threaded CPython
+CPython now has experimental support for running in a free-threaded mode, with the global interpreter lock (GIL) disabled. This is an experimental feature and therefore is not enabled by default. The free-threaded mode requires a different executable, usually called python3.13t or python3.13t.exe. Pre-built binaries marked as free-threaded can be installed as part of the official Windows and macOS installers, or CPython can be built from source with the --disable-gil option.
+
+Free-threaded execution allows for full utilization of the available processing power by running threads in parallel on available CPU cores. While not all software will benefit from this automatically, programs designed with threading in mind will run faster on multi-core hardware. The free-threaded mode is experimental and work is ongoing to improve it: expect some bugs and a substantial single-threaded performance hit. Free-threaded builds of CPython support optionally running with the GIL enabled at runtime using the environment variable PYTHON_GIL or the command-line option -X gil=1."
+C,t03,2,B:whatsnew-3.13:p003:c001,whatsnew-3.13,3,3.13,New Features,Free-threaded CPython,0.833,False,,,True,ok,"Python 3.13 > New Features > Free-threaded CPython
+To check if the current interpreter supports free-threading, python -VV and sys.version contain “experimental free-threading build”. The new sys._is_gil_enabled() function can be used to check whether the GIL is actually disabled in the running process.
+
+C-API extension modules need to be built specifically for the free-threaded build. Extensions that support running with the GIL disabled should use the Py_mod_gil slot. Extensions using single-phase init should use PyUnstable_Module_SetGIL() to indicate whether they support running with the GIL disabled. Importing C extensions that don’t use these mechanisms will cause the GIL to be enabled, unless the GIL was explicitly disabled with the PYTHON_GIL environment variable or the -X gil=0 option. pip 24.1 or newer is required to install packages with C extensions in the free-threaded build."
+C,t03,3,B:whatsnew-3.13:p003:c002,whatsnew-3.13,3,3.13,New Features,Free-threaded CPython,0.7188,False,,,True,ok,"Python 3.13 > New Features > Free-threaded CPython
+This work was made possible thanks to many individuals and organizations, including the large community of contributors to Python and third-party projects to test and enable free-threading support. Notable contributors include: Sam Gross, Ken Jin, Donghee Na, Itamar Oren, Matt Page, Brett Simmers, Dino Viehland, Carl Meyer, Nathan Goldbaum, Ralf Gommers, Lysandros Nikolaou, and many others. Many of these contributors are employed by Meta, which has provided significant engineering resources to support this project.
+
+See also
+
+PEP 703 “Making the Global Interpreter Lock Optional in CPython” contains rationale and information surrounding this work.
+
+Porting Extension Modules to Support Free-Threading: A community-maintained porting guide for extension authors."
+A,t04,1,A:whatsnew-3.12:p024:c005,whatsnew-3.12,24,3.12,Porting to Python 3.12,Changes in the Python API,0.7149,False,,,True,ok,"ld now run more than once for a single instance, if two threads race. For most simple cached properties (e.g. those that are idempotent and simply calculate a value based on other attributes of the instance) this will be fine. If synchronization is needed, implement locking within the cached property getter function or around multi-threaded access points.
+
+sys._current_exceptions() now returns a mapping from thread-id to an exception instance, rather than to a (typ, exc, tb) tuple. (Contributed by Irit Katriel in gh-103176.)
+
+When extracting tar files using tarfile or shutil.unpack_archive(), pass the filter argument to limit features that may be surprising or dangerous. See Extraction filters for details.
+
+The output of the tokenize.tokenize() and tokenize.generate_tokens() functions is n"
+A,t04,2,A:whatsnew-3.12:p006:c004,whatsnew-3.12,6,3.12,Other Language Changes,,0.7136,False,,,True,ok,"ed by Irit Katriel in gh-77757.)
+
+When a try-except* construct handles the entire ExceptionGroup and raises one other exception, that exception is no longer wrapped in an ExceptionGroup. Also changed in version 3.11.4. (Contributed by Irit Katriel in gh-103590.)
+
+The Garbage Collector now runs only on the eval breaker mechanism of the Python bytecode evaluation loop instead of object allocations. The GC can also run when PyErr_CheckSignals() is called so C extensions that need to run for a long time without executing any Python code also have a chance to execute the GC periodically. (Contributed by Pablo Galindo in gh-97922.)
+
+All builtin and extension callables expecting boolean parameters now accept arguments of any type instead of just bool and int. (Contributed by Serhiy Storchaka in g"
+A,t04,3,A:whatsnew-3.11:p019:c000,whatsnew-3.11,19,3.11,Faster CPython,Misc,0.7024,True,,,True,ok,"### Misc
+
+Objects now require less memory due to lazily created object namespaces. Their namespace dictionaries now also share keys more freely. (Contributed Mark Shannon in bpo-45340 and bpo-40116.)
+
+“Zero-cost” exceptions are implemented, eliminating the cost of try statements when no exception is raised. (Contributed by Mark Shannon in bpo-40222.)
+
+A more concise representation of exceptions in the interpreter reduced the time required for catching an exception by about 10%. (Contributed by Irit Katriel in bpo-45711.)
+
+re’s regular expression matching engine has been partially refactored, and now uses computed gotos (or “threaded code”) on supported platforms. As a result, Python 3.11 executes the pyperformance regular expression benchmarks up to 10% faster than Python 3.10. (Contribute"
+B,t04,1,B:whatsnew-3.11:p019:c000,whatsnew-3.11,19,3.11,Faster CPython,Misc,0.7086,True,,,True,ok,"Python 3.11 > Faster CPython > Misc
+Objects now require less memory due to lazily created object namespaces. Their namespace dictionaries now also share keys more freely. (Contributed Mark Shannon in bpo-45340 and bpo-40116.)
+
+“Zero-cost” exceptions are implemented, eliminating the cost of try statements when no exception is raised. (Contributed by Mark Shannon in bpo-40222.)
+
+A more concise representation of exceptions in the interpreter reduced the time required for catching an exception by about 10%. (Contributed by Irit Katriel in bpo-45711.)
+
+re’s regular expression matching engine has been partially refactored, and now uses computed gotos (or “threaded code”) on supported platforms. As a result, Python 3.11 executes the pyperformance regular expression benchmarks up to 10% faster than Python 3.10. (Contributed by Brandt Bucher in gh-91404.)"
+B,t04,2,B:whatsnew-3.12:p006:c004,whatsnew-3.12,6,3.12,Other Language Changes,,0.7055,False,,,True,ok,"Python 3.12 > Other Language Changes
+Exceptions raised in a class or type’s __set_name__ method are no longer wrapped by a RuntimeError. Context information is added to the exception as a PEP 678 note. (Contributed by Irit Katriel in gh-77757.)
+
+When a try-except* construct handles the entire ExceptionGroup and raises one other exception, that exception is no longer wrapped in an ExceptionGroup. Also changed in version 3.11.4. (Contributed by Irit Katriel in gh-103590.)
+
+The Garbage Collector now runs only on the eval breaker mechanism of the Python bytecode evaluation loop instead of object allocations. The GC can also run when PyErr_CheckSignals() is called so C extensions that need to run for a long time without executing any Python code also have a chance to execute the GC periodically. (Contributed by Pablo Galindo in gh-97922.)
+
+All builtin and extension callables expecting boolean parameters now accept arguments of any type instead of just bool and int. (Contributed by Serhiy Storchaka in gh-60203.)
+
+memoryview now supports the half-float type (the “e” format code). (Contributed by Donghee Na and Antoine Pitrou in gh-90751.)"
+B,t04,3,B:whatsnew-3.11:p015:c000,whatsnew-3.11,15,3.11,Improved Modules,typing,0.6717,False,,,True,ok,"Python 3.11 > Improved Modules > typing
+For major changes, see New Features Related to Type Hints.
+
+Add typing.assert_never() and typing.Never. typing.assert_never() is useful for asking a type checker to confirm that a line of code is not reachable. At runtime, it raises an AssertionError. (Contributed by Jelle Zijlstra in gh-90633.)
+
+Add typing.reveal_type(). This is useful for asking a type checker what type it has inferred for a given expression. At runtime it prints the type of the received value. (Contributed by Jelle Zijlstra in gh-90572.)
+
+Add typing.assert_type(). This is useful for asking a type checker to confirm that the type it has inferred for a given expression matches the given type. At runtime it simply returns the received value. (Contributed by Jelle Zijlstra in gh-90638.)
+
+typing.TypedDict types can now be generic. (Contributed by Samodya Abeysiriwardane in gh-89026.)
+
+NamedTuple types can now be generic. (Contributed by Serhiy Storchaka in bpo-43923.)
+
+Allow subclassing of typing.Any. This is useful for avoiding type checker errors related to highly dynamic class, such as mocks. (Contributed by Shantanu Jain in gh-91154.)"
+C,t04,1,B:whatsnew-3.11:p019:c000,whatsnew-3.11,19,3.11,Faster CPython,Misc,0.7086,True,,,True,ok,"Python 3.11 > Faster CPython > Misc
+Objects now require less memory due to lazily created object namespaces. Their namespace dictionaries now also share keys more freely. (Contributed Mark Shannon in bpo-45340 and bpo-40116.)
+
+“Zero-cost” exceptions are implemented, eliminating the cost of try statements when no exception is raised. (Contributed by Mark Shannon in bpo-40222.)
+
+A more concise representation of exceptions in the interpreter reduced the time required for catching an exception by about 10%. (Contributed by Irit Katriel in bpo-45711.)
+
+re’s regular expression matching engine has been partially refactored, and now uses computed gotos (or “threaded code”) on supported platforms. As a result, Python 3.11 executes the pyperformance regular expression benchmarks up to 10% faster than Python 3.10. (Contributed by Brandt Bucher in gh-91404.)"
+C,t04,2,B:whatsnew-3.12:p006:c004,whatsnew-3.12,6,3.12,Other Language Changes,,0.7055,False,,,True,ok,"Python 3.12 > Other Language Changes
+Exceptions raised in a class or type’s __set_name__ method are no longer wrapped by a RuntimeError. Context information is added to the exception as a PEP 678 note. (Contributed by Irit Katriel in gh-77757.)
+
+When a try-except* construct handles the entire ExceptionGroup and raises one other exception, that exception is no longer wrapped in an ExceptionGroup. Also changed in version 3.11.4. (Contributed by Irit Katriel in gh-103590.)
+
+The Garbage Collector now runs only on the eval breaker mechanism of the Python bytecode evaluation loop instead of object allocations. The GC can also run when PyErr_CheckSignals() is called so C extensions that need to run for a long time without executing any Python code also have a chance to execute the GC periodically. (Contributed by Pablo Galindo in gh-97922.)
+
+All builtin and extension callables expecting boolean parameters now accept arguments of any type instead of just bool and int. (Contributed by Serhiy Storchaka in gh-60203.)
+
+memoryview now supports the half-float type (the “e” format code). (Contributed by Donghee Na and Antoine Pitrou in gh-90751.)"
+C,t04,3,B:whatsnew-3.11:p015:c000,whatsnew-3.11,15,3.11,Improved Modules,typing,0.6717,False,,,True,ok,"Python 3.11 > Improved Modules > typing
+For major changes, see New Features Related to Type Hints.
+
+Add typing.assert_never() and typing.Never. typing.assert_never() is useful for asking a type checker to confirm that a line of code is not reachable. At runtime, it raises an AssertionError. (Contributed by Jelle Zijlstra in gh-90633.)
+
+Add typing.reveal_type(). This is useful for asking a type checker what type it has inferred for a given expression. At runtime it prints the type of the received value. (Contributed by Jelle Zijlstra in gh-90572.)
+
+Add typing.assert_type(). This is useful for asking a type checker to confirm that the type it has inferred for a given expression matches the given type. At runtime it simply returns the received value. (Contributed by Jelle Zijlstra in gh-90638.)
+
+typing.TypedDict types can now be generic. (Contributed by Samodya Abeysiriwardane in gh-89026.)
+
+NamedTuple types can now be generic. (Contributed by Serhiy Storchaka in bpo-43923.)
+
+Allow subclassing of typing.Any. This is useful for avoiding type checker errors related to highly dynamic class, such as mocks. (Contributed by Shantanu Jain in gh-91154.)"
+A,t05,1,A:whatsnew-3.12:p009:c000,whatsnew-3.12,9,3.12,Improved Modules,itertools,0.732,True,,,True,ok,"### itertools
+
+Add itertools.batched() for collecting into even-sized tuples where the last batch may be shorter than the rest. (Contributed by Raymond Hettinger in gh-98363.)
+
+### math
+
+Add math.sumprod() for computing a sum of products. (Contributed by Raymond Hettinger in gh-100485.)
+
+Extend math.nextafter() to include a steps argument for moving up or down multiple steps at a time. (Contributed by Matthias Goergens, Mark Dickinson, and Raymond Hettinger in gh-94906.)
+
+### os
+
+Add os.PIDFD_NONBLOCK to open a file descriptor for a process with os.pidfd_open() in non-blocking mode. (Contributed by Kumar Aditya in gh-93312.)
+
+os.DirEntry now includes an os.DirEntry.is_junction() method to check if the entry is a junction. (Contributed by Charles Machalow in gh-99547.)
+
+Add os.listdrives(),"
+A,t05,2,A:whatsnew-3.13:p012:c000,whatsnew-3.13,12,3.13,Improved Modules,itertools,0.7139,False,,,True,ok,"### itertools
+
+batched() has a new strict parameter, which raises a ValueError if the final batch is shorter than the specified batch size. (Contributed by Raymond Hettinger in gh-113202.)
+
+### marshal
+
+Add the allow_code parameter in module functions. Passing allow_code=False prevents serialization and de-serialization of code objects which are incompatible between Python versions. (Contributed by Serhiy Storchaka in gh-113626.)
+
+### math
+
+The new function fma() performs fused multiply-add operations. This computes x * y + z with only a single round, and so avoids any intermediate loss of precision. It wraps the fma() function provided by C99, and follows the specification of the IEEE 754 “fusedMultiplyAdd” operation for special cases. (Contributed by Mark Dickinson and Victor Stinner in "
+A,t05,3,A:whatsnew-3.11:p015:c002,whatsnew-3.11,15,3.11,Improved Modules,typing,0.6944,False,,,True,ok,"to clear all registered overloads of a function. (Contributed by Jelle Zijlstra in gh-89263.)
+
+The __init__() method of Protocol subclasses is now preserved. (Contributed by Adrian Garcia Badarasco in gh-88970.)
+
+The representation of empty tuple types (Tuple[()]) is simplified. This affects introspection, e.g. get_args(Tuple[()]) now evaluates to () instead of ((),). (Contributed by Serhiy Storchaka in gh-91137.)
+
+Loosen runtime requirements for type annotations by removing the callable check in the private typing._type_check function. (Contributed by Gregory Beauregard in gh-90802.)
+
+typing.get_type_hints() now supports evaluating strings as forward references in PEP 585 generic aliases. (Contributed by Niklas Rosenstein in gh-85542.)
+
+typing.get_type_hints() no longer adds Optional to p"
+B,t05,1,B:whatsnew-3.12:p009:c000,whatsnew-3.12,9,3.12,Improved Modules,itertools,0.8125,True,,,True,ok,"Python 3.12 > Improved Modules > itertools
+Add itertools.batched() for collecting into even-sized tuples where the last batch may be shorter than the rest. (Contributed by Raymond Hettinger in gh-98363.)"
+B,t05,2,B:whatsnew-3.13:p012:c000,whatsnew-3.13,12,3.13,Improved Modules,itertools,0.6996,False,,,True,ok,"Python 3.13 > Improved Modules > itertools
+batched() has a new strict parameter, which raises a ValueError if the final batch is shorter than the specified batch size. (Contributed by Raymond Hettinger in gh-113202.)"
+B,t05,3,B:whatsnew-3.12:p016:c003,whatsnew-3.12,16,3.12,Deprecated,,0.6981,False,,,True,ok,"Python 3.12 > Deprecated
+importlib.abc.Traversable
+
+importlib.abc.TraversableResources
+
+Use importlib.resources.abc classes instead:
+
+importlib.resources.abc.Traversable
+
+importlib.resources.abc.TraversableResources
+
+(Contributed by Jason R. Coombs and Hugo van Kemenade in gh-93963.)
+
+itertools: Deprecate the support for copy, deepcopy, and pickle operations, which is undocumented, inefficient, historically buggy, and inconsistent. This will be removed in 3.14 for a significant reduction in code volume and maintenance burden. (Contributed by Raymond Hettinger in gh-101588.)
+
+multiprocessing: In Python 3.14, the default multiprocessing start method will change to a safer one on Linux, BSDs, and other non-macOS POSIX platforms where 'fork' is currently the default (gh-84559). Adding a runtime warning about this was deemed too disruptive as the majority of code is not expected to care. Use the get_context() or set_start_method() APIs to explicitly specify when your code requires 'fork'. See contexts and start methods.
+
+pkgutil: pkgutil.find_loader() and pkgutil.get_loader() are deprecated and will be removed in Python 3.14; use importlib.util.find_spec() instead. (Contributed by Nikita Sobolev in gh-97850.)"
+C,t05,1,B:whatsnew-3.12:p009:c000,whatsnew-3.12,9,3.12,Improved Modules,itertools,0.8125,True,,,True,ok,"Python 3.12 > Improved Modules > itertools
+Add itertools.batched() for collecting into even-sized tuples where the last batch may be shorter than the rest. (Contributed by Raymond Hettinger in gh-98363.)"
+C,t05,2,B:whatsnew-3.13:p012:c000,whatsnew-3.13,12,3.13,Improved Modules,itertools,0.6996,False,,,True,ok,"Python 3.13 > Improved Modules > itertools
+batched() has a new strict parameter, which raises a ValueError if the final batch is shorter than the specified batch size. (Contributed by Raymond Hettinger in gh-113202.)"
+C,t05,3,B:whatsnew-3.12:p016:c003,whatsnew-3.12,16,3.12,Deprecated,,0.6981,False,,,True,ok,"Python 3.12 > Deprecated
+importlib.abc.Traversable
+
+importlib.abc.TraversableResources
+
+Use importlib.resources.abc classes instead:
+
+importlib.resources.abc.Traversable
+
+importlib.resources.abc.TraversableResources
+
+(Contributed by Jason R. Coombs and Hugo van Kemenade in gh-93963.)
+
+itertools: Deprecate the support for copy, deepcopy, and pickle operations, which is undocumented, inefficient, historically buggy, and inconsistent. This will be removed in 3.14 for a significant reduction in code volume and maintenance burden. (Contributed by Raymond Hettinger in gh-101588.)
+
+multiprocessing: In Python 3.14, the default multiprocessing start method will change to a safer one on Linux, BSDs, and other non-macOS POSIX platforms where 'fork' is currently the default (gh-84559). Adding a runtime warning about this was deemed too disruptive as the majority of code is not expected to care. Use the get_context() or set_start_method() APIs to explicitly specify when your code requires 'fork'. See contexts and start methods.
+
+pkgutil: pkgutil.find_loader() and pkgutil.get_loader() are deprecated and will be removed in Python 3.14; use importlib.util.find_spec() instead. (Contributed by Nikita Sobolev in gh-97850.)"

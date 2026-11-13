@@ -1,4 +1,4 @@
 strategy,chunking,chunk_size,overlap,metadata,filter,vectorizer,hypothesis,dev_hit1,dev_hit3,test_hit1,test_hit3,notes
-A,,,,,,,,,,,,
-B,,,,,,,,,,,,
-C,,,,,,,,,,,,
+A,fixed_size (character windows per page unit),800,100,"document_id, source, page, version, section, subsection, char_start, char_end",none,BAAI/bge-small-en-v1.5 (384d; cosine; pgvector exact),"Baseline: windows ignore structure, so evidence and subjects get cut at chunk edges",13/18,15/18,3/5,5/5,"453 chunks; misses: d10 and d17 evidence split across two windows, d15 picked the wrong document's editor (3.13)"
+B,by_paragraph (heading-bounded + breadcrumb 'Python X > section > subsection'),1200 max (body),0,same as A,none,same model,"Heading-bounded chunks with a breadcrumb keep the subject (module/PEP) and full sentences, so Hit@1 and coherence should beat A",16/18,18/18,4/5,4/5,"425 chunks; t01 test miss: without a filter the top-3 holds 3.12/3.11 release dates; 1 chunk >512 tokens is truncated by the model"
+C,same chunks as B (reuses index B),1200 max (body),0,same as A,"version (SQL WHERE, only when the question carries a filter: d15, d16, d17, t01, t02)",same model,"Same as B; adding a version filter given by the context should fix questions that only metadata can disambiguate",17/18,18/18,4/5,5/5,"Picked by the pre-registered rule (dev Hit@3 ties with B, dev Hit@1 17 > 16). Filter compliance 3/3 dev and 2/2 test. d18 is still at rank 3 (no filter)"

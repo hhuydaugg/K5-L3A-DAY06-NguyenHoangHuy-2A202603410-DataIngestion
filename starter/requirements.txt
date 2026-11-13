@@ -1,4 +1,7 @@
-# Core setup and PDF parsing. Choose and install an embedding SDK separately.
+# Versions used for the submitted run (Python 3.12.10, CPU).
 psycopg[binary]==3.3.8
-pypdf>=5,<7
 python-dotenv>=1,<2
+beautifulsoup4==4.15.0
+sentence-transformers==6.3.0
+# CPU wheel: pip install torch==2.15.0 --index-url https://download.pytorch.org/whl/cpu
+torch==2.15.0

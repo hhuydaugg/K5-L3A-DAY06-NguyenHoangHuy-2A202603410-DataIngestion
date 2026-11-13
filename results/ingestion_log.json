@@ -1,0 +1,39 @@
+{
+  "seconds": 0.754,
+  "documents": [
+    {
+      "document_id": "whatsnew-3.11",
+      "title": "What’s New In Python 3.11",
+      "version": "3.11",
+      "html_title": "What’s New In Python 3.11 — Python 3.11.18 documentation",
+      "blocks": 701,
+      "empty_blocks_skipped": 0,
+      "leaf_sections": 99,
+      "units": 31,
+      "short_units": []
+    },
+    {
+      "document_id": "whatsnew-3.12",
+      "title": "What’s New In Python 3.12",
+      "version": "3.12",
+      "html_title": "What’s New In Python 3.12 — Python 3.12.16 documentation",
+      "blocks": 865,
+      "empty_blocks_skipped": 0,
+      "leaf_sections": 99,
+      "units": 31,
+      "short_units": []
+    },
+    {
+      "document_id": "whatsnew-3.13",
+      "title": "What’s New In Python 3.13",
+      "version": "3.13",
+      "html_title": "What’s New In Python 3.13 — Python 3.13.18 documentation",
+      "blocks": 941,
+      "empty_blocks_skipped": 0,
+      "leaf_sections": 111,
+      "units": 38,
+      "short_units": []
+    }
+  ],
+  "errors": []
+}

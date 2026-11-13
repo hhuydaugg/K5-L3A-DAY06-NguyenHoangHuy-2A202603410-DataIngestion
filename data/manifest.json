@@ -1,0 +1,985 @@
+{
+  "generated_at": "2026-11-13T10:42:18+00:00",
+  "content_units_total": 100,
+  "documents": [
+    {
+      "source_id": "whatsnew-3.11",
+      "title": "What’s New In Python 3.11",
+      "source_path_or_url": "https://docs.python.org/3.11/whatsnew/3.11.html",
+      "local_path": "starter/data/raw/whatsnew-3.11.html",
+      "license_or_permission": "Python Software Foundation License Version 2 (documentation text); code examples additionally Zero Clause BSD. Source: footer of each page and https://docs.python.org/3/license.html",
+      "accessed_at": "2026-11-13T10:05:08Z",
+      "snapshot_version": "What’s New In Python 3.11 — Python 3.11.18 documentation",
+      "page_last_updated": "Oct 26, 2026 (16:21 UTC)",
+      "version_filter_value": "3.11",
+      "page_rule": "No physical pages (HTML). Unit = whole leaf sections (h1-h4) packed in document order until >= 1500 normalized chars; a short tail joins the previous unit.",
+      "pages_counted": 31,
+      "pages": [
+        {
+          "page": 1,
+          "page_id": "whatsnew-3.11#p001",
+          "chars": 3590,
+          "first_heading": "# What’s New In Python 3.11",
+          "sections": [
+            "What’s New In Python 3.11",
+            "Summary – Release highlights",
+            "New Features"
+          ]
+        },
+        {
+          "page": 2,
+          "page_id": "whatsnew-3.11#p002",
+          "chars": 2035,
+          "first_heading": "### PEP 654: Exception Groups and except*",
+          "sections": [
+            "New Features"
+          ]
+        },
+        {
+          "page": 3,
+          "page_id": "whatsnew-3.11#p003",
+          "chars": 1941,
+          "first_heading": "## New Features Related to Type Hints",
+          "sections": [
+            "New Features Related to Type Hints"
+          ]
+        },
+        {
+          "page": 4,
+          "page_id": "whatsnew-3.11#p004",
+          "chars": 1894,
+          "first_heading": "### PEP 673: Self type",
+          "sections": [
+            "New Features Related to Type Hints"
+          ]
+        },
+        {
+          "page": 5,
+          "page_id": "whatsnew-3.11#p005",
+          "chars": 3507,
+          "first_heading": "### PEP 681: Data class transforms",
+          "sections": [
+            "New Features Related to Type Hints",
+            "Other Language Changes"
+          ]
+        },
+        {
+          "page": 6,
+          "page_id": "whatsnew-3.11#p006",
+          "chars": 2490,
+          "first_heading": "## Other CPython Implementation Changes",
+          "sections": [
+            "Other CPython Implementation Changes"
+          ]
+        },
+        {
+          "page": 7,
+          "page_id": "whatsnew-3.11#p007",
+          "chars": 1679,
+          "first_heading": "## New Modules",
+          "sections": [
+            "New Modules",
+            "Improved Modules"
+          ]
+        },
+        {
+          "page": 8,
+          "page_id": "whatsnew-3.11#p008",
+          "chars": 2697,
+          "first_heading": "### contextlib",
+          "sections": [
+            "Improved Modules"
+          ]
+        },
+        {
+          "page": 9,
+          "page_id": "whatsnew-3.11#p009",
+          "chars": 1702,
+          "first_heading": "### fcntl",
+          "sections": [
+            "Improved Modules"
+          ]
+        },
+        {
+          "page": 10,
+          "page_id": "whatsnew-3.11#p010",
+          "chars": 1621,
+          "first_heading": "### hashlib",
+          "sections": [
+            "Improved Modules"
+          ]
+        },
+        {
+          "page": 11,
+          "page_id": "whatsnew-3.11#p011",
+          "chars": 1847,
+          "first_heading": "### locale",
+          "sections": [
+            "Improved Modules"
+          ]
+        },
+        {
+          "page": 12,
+          "page_id": "whatsnew-3.11#p012",
+          "chars": 2564,
+          "first_heading": "### pathlib",
+          "sections": [
+            "Improved Modules"
+          ]
+        },
+        {
+          "page": 13,
+          "page_id": "whatsnew-3.11#p013",
+          "chars": 1876,
+          "first_heading": "### string",
+          "sections": [
+            "Improved Modules"
+          ]
+        },
+        {
+          "page": 14,
+          "page_id": "whatsnew-3.11#p014",
+          "chars": 1534,
+          "first_heading": "### threading",
+          "sections": [
+            "Improved Modules"
+          ]
+        },
+        {
+          "page": 15,
+          "page_id": "whatsnew-3.11#p015",
+          "chars": 2603,
+          "first_heading": "### typing",
+          "sections": [
+            "Improved Modules"
+          ]
+        },
+        {
+          "page": 16,
+          "page_id": "whatsnew-3.11#p016",
+          "chars": 3369,
+          "first_heading": "### unicodedata",
+          "sections": [
+            "Improved Modules",
+            "Optimizations"
+          ]
+        },
+        {
+          "page": 17,
+          "page_id": "whatsnew-3.11#p017",
+          "chars": 2012,
+          "first_heading": "## Faster CPython",
+          "sections": [
+            "Faster CPython"
+          ]
+        },
+        {
+          "page": 18,
+          "page_id": "whatsnew-3.11#p018",
+          "chars": 4338,
+          "first_heading": "#### Inlined Python function calls",
+          "sections": [
+            "Faster CPython"
+          ]
+        },
+        {
+          "page": 19,
+          "page_id": "whatsnew-3.11#p019",
+          "chars": 1803,
+          "first_heading": "### Misc",
+          "sections": [
+            "Faster CPython"
+          ]
+        },
+        {
+          "page": 20,
+          "page_id": "whatsnew-3.11#p020",
+          "chars": 2287,
+          "first_heading": "#### Is there a JIT compiler?",
+          "sections": [
+            "Faster CPython",
+            "CPython bytecode changes"
+          ]
+        },
+        {
+          "page": 21,
+          "page_id": "whatsnew-3.11#p021",
+          "chars": 2397,
+          "first_heading": "### Changed/removed opcodes",
+          "sections": [
+            "CPython bytecode changes",
+            "Deprecated"
+          ]
+        },
+        {
+          "page": 22,
+          "page_id": "whatsnew-3.11#p022",
+          "chars": 3864,
+          "first_heading": "### Standard Library",
+          "sections": [
+            "Deprecated"
+          ]
+        },
+        {
+          "page": 23,
+          "page_id": "whatsnew-3.11#p023",
+          "chars": 1930,
+          "first_heading": "## Pending Removal in Python 3.12",
+          "sections": [
+            "Pending Removal in Python 3.12"
+          ]
+        },
+        {
+          "page": 24,
+          "page_id": "whatsnew-3.11#p024",
+          "chars": 3657,
+          "first_heading": "## Removed",
+          "sections": [
+            "Removed"
+          ]
+        },
+        {
+          "page": 25,
+          "page_id": "whatsnew-3.11#p025",
+          "chars": 2335,
+          "first_heading": "## Porting to Python 3.11",
+          "sections": [
+            "Porting to Python 3.11"
+          ]
+        },
+        {
+          "page": 26,
+          "page_id": "whatsnew-3.11#p026",
+          "chars": 3418,
+          "first_heading": "## Build Changes",
+          "sections": [
+            "Build Changes"
+          ]
+        },
+        {
+          "page": 27,
+          "page_id": "whatsnew-3.11#p027",
+          "chars": 2015,
+          "first_heading": "## C API Changes",
+          "sections": [
+            "C API Changes"
+          ]
+        },
+        {
+          "page": 28,
+          "page_id": "whatsnew-3.11#p028",
+          "chars": 10168,
+          "first_heading": "### Porting to Python 3.11",
+          "sections": [
+            "C API Changes"
+          ]
+        },
+        {
+          "page": 29,
+          "page_id": "whatsnew-3.11#p029",
+          "chars": 3515,
+          "first_heading": "### Deprecated",
+          "sections": [
+            "C API Changes"
+          ]
+        },
+        {
+          "page": 30,
+          "page_id": "whatsnew-3.11#p030",
+          "chars": 1663,
+          "first_heading": "## Notable Changes in 3.11.4",
+          "sections": [
+            "Notable Changes in 3.11.4",
+            "Notable Changes in 3.11.5",
+            "Notable changes in 3.11.10"
+          ]
+        },
+        {
+          "page": 31,
+          "page_id": "whatsnew-3.11#p031",
+          "chars": 1691,
+          "first_heading": "## Notable changes in 3.11.13",
+          "sections": [
+            "Notable changes in 3.11.13",
+            "Notable changes in 3.11.18"
+          ]
+        }
+      ],
+      "total_chars": 84042
+    },
+    {
+      "source_id": "whatsnew-3.12",
+      "title": "What’s New In Python 3.12",
+      "source_path_or_url": "https://docs.python.org/3/whatsnew/3.12.html",
+      "local_path": "starter/data/raw/whatsnew-3.12.html",
+      "license_or_permission": "Python Software Foundation License Version 2 (documentation text); code examples additionally Zero Clause BSD. Source: footer of each page and https://docs.python.org/3/license.html",
+      "accessed_at": "2026-11-13T10:05:08Z",
+      "snapshot_version": "What’s New In Python 3.12 — Python 3.12.16 documentation",
+      "page_last_updated": "Oct 26, 2026 (15:00 UTC)",
+      "version_filter_value": "3.12",
+      "page_rule": "No physical pages (HTML). Unit = whole leaf sections (h1-h4) packed in document order until >= 1500 normalized chars; a short tail joins the previous unit.",
+      "pages_counted": 31,
+      "pages": [
+        {
+          "page": 1,
+          "page_id": "whatsnew-3.12#p001",
+          "chars": 3868,
+          "first_heading": "# What’s New In Python 3.12",
+          "sections": [
+            "What’s New In Python 3.12",
+            "Summary – Release highlights"
+          ]
+        },
+        {
+          "page": 2,
+          "page_id": "whatsnew-3.12#p002",
+          "chars": 2198,
+          "first_heading": "## New Features",
+          "sections": [
+            "New Features"
+          ]
+        },
+        {
+          "page": 3,
+          "page_id": "whatsnew-3.12#p003",
+          "chars": 3672,
+          "first_heading": "### PEP 701: Syntactic formalization of f-strings",
+          "sections": [
+            "New Features"
+          ]
+        },
+        {
+          "page": 4,
+          "page_id": "whatsnew-3.12#p004",
+          "chars": 1832,
+          "first_heading": "### PEP 684: A Per-Interpreter GIL",
+          "sections": [
+            "New Features"
+          ]
+        },
+        {
+          "page": 5,
+          "page_id": "whatsnew-3.12#p005",
+          "chars": 3216,
+          "first_heading": "### PEP 709: Comprehension inlining",
+          "sections": [
+            "New Features"
+          ]
+        },
+        {
+          "page": 6,
+          "page_id": "whatsnew-3.12#p006",
+          "chars": 5136,
+          "first_heading": "## New Features Related to Type Hints",
+          "sections": [
+            "New Features Related to Type Hints",
+            "Other Language Changes"
+          ]
+        },
+        {
+          "page": 7,
+          "page_id": "whatsnew-3.12#p007",
+          "chars": 1705,
+          "first_heading": "## New Modules",
+          "sections": [
+            "New Modules",
+            "Improved Modules"
+          ]
+        },
+        {
+          "page": 8,
+          "page_id": "whatsnew-3.12#p008",
+          "chars": 1701,
+          "first_heading": "### calendar",
+          "sections": [
+            "Improved Modules"
+          ]
+        },
+        {
+          "page": 9,
+          "page_id": "whatsnew-3.12#p009",
+          "chars": 1827,
+          "first_heading": "### itertools",
+          "sections": [
+            "Improved Modules"
+          ]
+        },
+        {
+          "page": 10,
+          "page_id": "whatsnew-3.12#p010",
+          "chars": 1668,
+          "first_heading": "### os.path",
+          "sections": [
+            "Improved Modules"
+          ]
+        },
+        {
+          "page": 11,
+          "page_id": "whatsnew-3.12#p011",
+          "chars": 2023,
+          "first_heading": "### random",
+          "sections": [
+            "Improved Modules"
+          ]
+        },
+        {
+          "page": 12,
+          "page_id": "whatsnew-3.12#p012",
+          "chars": 1893,
+          "first_heading": "### statistics",
+          "sections": [
+            "Improved Modules"
+          ]
+        },
+        {
+          "page": 13,
+          "page_id": "whatsnew-3.12#p013",
+          "chars": 3038,
+          "first_heading": "### threading",
+          "sections": [
+            "Improved Modules"
+          ]
+        },
+        {
+          "page": 14,
+          "page_id": "whatsnew-3.12#p014",
+          "chars": 1984,
+          "first_heading": "### unicodedata",
+          "sections": [
+            "Improved Modules",
+            "Optimizations"
+          ]
+        },
+        {
+          "page": 15,
+          "page_id": "whatsnew-3.12#p015",
+          "chars": 1508,
+          "first_heading": "## CPython bytecode changes",
+          "sections": [
+            "CPython bytecode changes"
+          ]
+        },
+        {
+          "page": 16,
+          "page_id": "whatsnew-3.12#p016",
+          "chars": 7800,
+          "first_heading": "## Demos and Tools",
+          "sections": [
+            "Demos and Tools",
+            "Deprecated"
+          ]
+        },
+        {
+          "page": 17,
+          "page_id": "whatsnew-3.12#p017",
+          "chars": 4276,
+          "first_heading": "### Pending Removal in Python 3.13",
+          "sections": [
+            "Deprecated"
+          ]
+        },
+        {
+          "page": 18,
+          "page_id": "whatsnew-3.12#p018",
+          "chars": 2910,
+          "first_heading": "### Pending Removal in Python 3.15",
+          "sections": [
+            "Deprecated"
+          ]
+        },
+        {
+          "page": 19,
+          "page_id": "whatsnew-3.12#p019",
+          "chars": 5122,
+          "first_heading": "### Pending Removal in Python 3.16",
+          "sections": [
+            "Deprecated"
+          ]
+        },
+        {
+          "page": 20,
+          "page_id": "whatsnew-3.12#p020",
+          "chars": 1723,
+          "first_heading": "## Removed",
+          "sections": [
+            "Removed"
+          ]
+        },
+        {
+          "page": 21,
+          "page_id": "whatsnew-3.12#p021",
+          "chars": 3215,
+          "first_heading": "### enum",
+          "sections": [
+            "Removed"
+          ]
+        },
+        {
+          "page": 22,
+          "page_id": "whatsnew-3.12#p022",
+          "chars": 2036,
+          "first_heading": "### io",
+          "sections": [
+            "Removed"
+          ]
+        },
+        {
+          "page": 23,
+          "page_id": "whatsnew-3.12#p023",
+          "chars": 1732,
+          "first_heading": "### unittest",
+          "sections": [
+            "Removed"
+          ]
+        },
+        {
+          "page": 24,
+          "page_id": "whatsnew-3.12#p024",
+          "chars": 5996,
+          "first_heading": "### zipimport",
+          "sections": [
+            "Removed",
+            "Porting to Python 3.12"
+          ]
+        },
+        {
+          "page": 25,
+          "page_id": "whatsnew-3.12#p025",
+          "chars": 7383,
+          "first_heading": "## Build Changes",
+          "sections": [
+            "Build Changes",
+            "C API Changes"
+          ]
+        },
+        {
+          "page": 26,
+          "page_id": "whatsnew-3.12#p026",
+          "chars": 5902,
+          "first_heading": "### Porting to Python 3.12",
+          "sections": [
+            "C API Changes"
+          ]
+        },
+        {
+          "page": 27,
+          "page_id": "whatsnew-3.12#p027",
+          "chars": 3402,
+          "first_heading": "### Deprecated",
+          "sections": [
+            "C API Changes"
+          ]
+        },
+        {
+          "page": 28,
+          "page_id": "whatsnew-3.12#p028",
+          "chars": 1944,
+          "first_heading": "#### Pending Removal in Python 3.14",
+          "sections": [
+            "C API Changes"
+          ]
+        },
+        {
+          "page": 29,
+          "page_id": "whatsnew-3.12#p029",
+          "chars": 2223,
+          "first_heading": "#### Pending Removal in Python 3.15",
+          "sections": [
+            "C API Changes"
+          ]
+        },
+        {
+          "page": 30,
+          "page_id": "whatsnew-3.12#p030",
+          "chars": 1728,
+          "first_heading": "### Removed",
+          "sections": [
+            "C API Changes",
+            "Notable changes in 3.12.4",
+            "Notable changes in 3.12.5",
+            "Notable changes in 3.12.6"
+          ]
+        },
+        {
+          "page": 31,
+          "page_id": "whatsnew-3.12#p031",
+          "chars": 1921,
+          "first_heading": "## Notable changes in 3.12.8",
+          "sections": [
+            "Notable changes in 3.12.8",
+            "Notable changes in 3.12.10",
+            "Notable changes in 3.12.16"
+          ]
+        }
+      ],
+      "total_chars": 96582
+    },
+    {
+      "source_id": "whatsnew-3.13",
+      "title": "What’s New In Python 3.13",
+      "source_path_or_url": "https://docs.python.org/3/whatsnew/3.13.html",
+      "local_path": "starter/data/raw/whatsnew-3.13.html",
+      "license_or_permission": "Python Software Foundation License Version 2 (documentation text); code examples additionally Zero Clause BSD. Source: footer of each page and https://docs.python.org/3/license.html",
+      "accessed_at": "2026-11-13T10:05:08Z",
+      "snapshot_version": "What’s New In Python 3.13 — Python 3.13.18 documentation",
+      "page_last_updated": "Oct 26, 2026 (13:10 UTC)",
+      "version_filter_value": "3.13",
+      "page_rule": "No physical pages (HTML). Unit = whole leaf sections (h1-h4) packed in document order until >= 1500 normalized chars; a short tail joins the previous unit.",
+      "pages_counted": 38,
+      "pages": [
+        {
+          "page": 1,
+          "page_id": "whatsnew-3.13#p001",
+          "chars": 5632,
+          "first_heading": "# What’s New In Python 3.13",
+          "sections": [
+            "What’s New In Python 3.13",
+            "Summary – Release Highlights"
+          ]
+        },
+        {
+          "page": 2,
+          "page_id": "whatsnew-3.13#p002",
+          "chars": 3046,
+          "first_heading": "## New Features",
+          "sections": [
+            "New Features"
+          ]
+        },
+        {
+          "page": 3,
+          "page_id": "whatsnew-3.13#p003",
+          "chars": 2723,
+          "first_heading": "### Free-threaded CPython",
+          "sections": [
+            "New Features"
+          ]
+        },
+        {
+          "page": 4,
+          "page_id": "whatsnew-3.13#p004",
+          "chars": 2251,
+          "first_heading": "### An experimental just-in-time (JIT) compiler",
+          "sections": [
+            "New Features"
+          ]
+        },
+        {
+          "page": 5,
+          "page_id": "whatsnew-3.13#p005",
+          "chars": 2365,
+          "first_heading": "### Defined mutation semantics for locals()",
+          "sections": [
+            "New Features"
+          ]
+        },
+        {
+          "page": 6,
+          "page_id": "whatsnew-3.13#p006",
+          "chars": 4585,
+          "first_heading": "### Support for mobile platforms",
+          "sections": [
+            "New Features",
+            "Other Language Changes"
+          ]
+        },
+        {
+          "page": 7,
+          "page_id": "whatsnew-3.13#p007",
+          "chars": 1938,
+          "first_heading": "## New Modules",
+          "sections": [
+            "New Modules",
+            "Improved Modules"
+          ]
+        },
+        {
+          "page": 8,
+          "page_id": "whatsnew-3.13#p008",
+          "chars": 3055,
+          "first_heading": "### asyncio",
+          "sections": [
+            "Improved Modules"
+          ]
+        },
+        {
+          "page": 9,
+          "page_id": "whatsnew-3.13#p009",
+          "chars": 2079,
+          "first_heading": "### base64",
+          "sections": [
+            "Improved Modules"
+          ]
+        },
+        {
+          "page": 10,
+          "page_id": "whatsnew-3.13#p010",
+          "chars": 2274,
+          "first_heading": "### dbm",
+          "sections": [
+            "Improved Modules"
+          ]
+        },
+        {
+          "page": 11,
+          "page_id": "whatsnew-3.13#p011",
+          "chars": 1640,
+          "first_heading": "### enum",
+          "sections": [
+            "Improved Modules"
+          ]
+        },
+        {
+          "page": 12,
+          "page_id": "whatsnew-3.13#p012",
+          "chars": 1634,
+          "first_heading": "### itertools",
+          "sections": [
+            "Improved Modules"
+          ]
+        },
+        {
+          "page": 13,
+          "page_id": "whatsnew-3.13#p013",
+          "chars": 2032,
+          "first_heading": "### multiprocessing",
+          "sections": [
+            "Improved Modules"
+          ]
+        },
+        {
+          "page": 14,
+          "page_id": "whatsnew-3.13#p014",
+          "chars": 1566,
+          "first_heading": "### os.path",
+          "sections": [
+            "Improved Modules"
+          ]
+        },
+        {
+          "page": 15,
+          "page_id": "whatsnew-3.13#p015",
+          "chars": 1523,
+          "first_heading": "### pdb",
+          "sections": [
+            "Improved Modules"
+          ]
+        },
+        {
+          "page": 16,
+          "page_id": "whatsnew-3.13#p016",
+          "chars": 1845,
+          "first_heading": "### sqlite3",
+          "sections": [
+            "Improved Modules"
+          ]
+        },
+        {
+          "page": 17,
+          "page_id": "whatsnew-3.13#p017",
+          "chars": 2672,
+          "first_heading": "### sys",
+          "sections": [
+            "Improved Modules"
+          ]
+        },
+        {
+          "page": 18,
+          "page_id": "whatsnew-3.13#p018",
+          "chars": 1586,
+          "first_heading": "### traceback",
+          "sections": [
+            "Improved Modules"
+          ]
+        },
+        {
+          "page": 19,
+          "page_id": "whatsnew-3.13#p019",
+          "chars": 2260,
+          "first_heading": "### venv",
+          "sections": [
+            "Improved Modules",
+            "Optimizations"
+          ]
+        },
+        {
+          "page": 20,
+          "page_id": "whatsnew-3.13#p020",
+          "chars": 3816,
+          "first_heading": "## Removed Modules And APIs",
+          "sections": [
+            "Removed Modules And APIs"
+          ]
+        },
+        {
+          "page": 21,
+          "page_id": "whatsnew-3.13#p021",
+          "chars": 1698,
+          "first_heading": "### 2to3",
+          "sections": [
+            "Removed Modules And APIs"
+          ]
+        },
+        {
+          "page": 22,
+          "page_id": "whatsnew-3.13#p022",
+          "chars": 1716,
+          "first_heading": "### optparse",
+          "sections": [
+            "Removed Modules And APIs"
+          ]
+        },
+        {
+          "page": 23,
+          "page_id": "whatsnew-3.13#p023",
+          "chars": 7030,
+          "first_heading": "### unittest",
+          "sections": [
+            "Removed Modules And APIs",
+            "New Deprecations"
+          ]
+        },
+        {
+          "page": 24,
+          "page_id": "whatsnew-3.13#p024",
+          "chars": 3138,
+          "first_heading": "### Pending Removal in Python 3.14",
+          "sections": [
+            "New Deprecations"
+          ]
+        },
+        {
+          "page": 25,
+          "page_id": "whatsnew-3.13#p025",
+          "chars": 2736,
+          "first_heading": "### Pending Removal in Python 3.15",
+          "sections": [
+            "New Deprecations"
+          ]
+        },
+        {
+          "page": 26,
+          "page_id": "whatsnew-3.13#p026",
+          "chars": 1504,
+          "first_heading": "### Pending removal in Python 3.16",
+          "sections": [
+            "New Deprecations"
+          ]
+        },
+        {
+          "page": 27,
+          "page_id": "whatsnew-3.13#p027",
+          "chars": 2135,
+          "first_heading": "### Pending removal in Python 3.17",
+          "sections": [
+            "New Deprecations"
+          ]
+        },
+        {
+          "page": 28,
+          "page_id": "whatsnew-3.13#p028",
+          "chars": 4908,
+          "first_heading": "### Pending removal in Python 3.18",
+          "sections": [
+            "New Deprecations"
+          ]
+        },
+        {
+          "page": 29,
+          "page_id": "whatsnew-3.13#p029",
+          "chars": 8285,
+          "first_heading": "## CPython Bytecode Changes",
+          "sections": [
+            "CPython Bytecode Changes",
+            "C API Changes"
+          ]
+        },
+        {
+          "page": 30,
+          "page_id": "whatsnew-3.13#p030",
+          "chars": 1975,
+          "first_heading": "### Changed C APIs",
+          "sections": [
+            "C API Changes"
+          ]
+        },
+        {
+          "page": 31,
+          "page_id": "whatsnew-3.13#p031",
+          "chars": 4942,
+          "first_heading": "### Limited C API Changes",
+          "sections": [
+            "C API Changes"
+          ]
+        },
+        {
+          "page": 32,
+          "page_id": "whatsnew-3.13#p032",
+          "chars": 1612,
+          "first_heading": "### Deprecated C APIs",
+          "sections": [
+            "C API Changes"
+          ]
+        },
+        {
+          "page": 33,
+          "page_id": "whatsnew-3.13#p033",
+          "chars": 1944,
+          "first_heading": "#### Pending Removal in Python 3.14",
+          "sections": [
+            "C API Changes"
+          ]
+        },
+        {
+          "page": 34,
+          "page_id": "whatsnew-3.13#p034",
+          "chars": 2301,
+          "first_heading": "#### Pending Removal in Python 3.15",
+          "sections": [
+            "C API Changes"
+          ]
+        },
+        {
+          "page": 35,
+          "page_id": "whatsnew-3.13#p035",
+          "chars": 1984,
+          "first_heading": "## Build Changes",
+          "sections": [
+            "Build Changes"
+          ]
+        },
+        {
+          "page": 36,
+          "page_id": "whatsnew-3.13#p036",
+          "chars": 2854,
+          "first_heading": "## Porting to Python 3.13",
+          "sections": [
+            "Porting to Python 3.13"
+          ]
+        },
+        {
+          "page": 37,
+          "page_id": "whatsnew-3.13#p037",
+          "chars": 4541,
+          "first_heading": "### Changes in the C API",
+          "sections": [
+            "Porting to Python 3.13"
+          ]
+        },
+        {
+          "page": 38,
+          "page_id": "whatsnew-3.13#p038",
+          "chars": 2224,
+          "first_heading": "## Regression Test Changes",
+          "sections": [
+            "Regression Test Changes",
+            "Notable changes in 3.13.1",
+            "Notable changes in 3.13.4",
+            "Notable changes in 3.13.18"
+          ]
+        }
+      ],
+      "total_chars": 108049
+    }
+  ]
+}

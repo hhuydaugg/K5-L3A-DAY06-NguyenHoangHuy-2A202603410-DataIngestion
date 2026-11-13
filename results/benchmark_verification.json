@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-13T10:42:18+00:00",
+  "questions": 23,
+  "dev": 18,
+  "test": 5,
+  "with_filter": 5,
+  "filter_in_test": 2,
+  "gold_options_checked": 30,
+  "all_evidence_found": true
+}

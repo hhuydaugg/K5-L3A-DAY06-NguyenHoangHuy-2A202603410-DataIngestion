@@ -1,0 +1,59 @@
+{
+  "A": {
+    "dev": {
+      "N": 18,
+      "hit1": 13,
+      "hit3": 15,
+      "doc_page_top3": 17,
+      "filter_N": 3,
+      "filter_compliant": 0
+    },
+    "test": {
+      "N": 5,
+      "hit1": 3,
+      "hit3": 5,
+      "doc_page_top3": 5,
+      "filter_N": 2,
+      "filter_compliant": 0
+    },
+    "query_latency_ms_mean": 25.16
+  },
+  "B": {
+    "dev": {
+      "N": 18,
+      "hit1": 16,
+      "hit3": 18,
+      "doc_page_top3": 18,
+      "filter_N": 3,
+      "filter_compliant": 1
+    },
+    "test": {
+      "N": 5,
+      "hit1": 4,
+      "hit3": 4,
+      "doc_page_top3": 5,
+      "filter_N": 2,
+      "filter_compliant": 0
+    },
+    "query_latency_ms_mean": 24.33
+  },
+  "C": {
+    "dev": {
+      "N": 18,
+      "hit1": 17,
+      "hit3": 18,
+      "doc_page_top3": 18,
+      "filter_N": 3,
+      "filter_compliant": 3
+    },
+    "test": {
+      "N": 5,
+      "hit1": 4,
+      "hit3": 5,
+      "doc_page_top3": 5,
+      "filter_N": 2,
+      "filter_compliant": 2
+    },
+    "query_latency_ms_mean": 25.77
+  }
+}

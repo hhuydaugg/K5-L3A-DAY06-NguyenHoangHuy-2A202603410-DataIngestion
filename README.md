@@ -1,5 +1,17 @@
 # Day 06 · Data Ingestion Engineering
 
+> **Bài làm — Nguyễn Hoàng Huy (2A202603410).** Corpus gồm tài liệu "What's New In Python" bản 3.11, 3.12 và 3.13, chia thành 100 đơn vị nội dung. Embedding dùng `BAAI/bge-small-en-v1.5` chạy local, lưu vào PostgreSQL + pgvector. Báo cáo: [report/individual/2A202603410_NguyenHoangHuy.md](report/individual/2A202603410_NguyenHoangHuy.md).
+>
+> **Chạy lại** (Python 3.12, Docker; mọi lệnh chạy trong `starter/`):
+> ```bash
+> pip install -r requirements.txt        # torch CPU: thêm --index-url https://download.pytorch.org/whl/cpu
+> cp .env.example .env                   # đặt HF_HOME nếu muốn cache model ở nơi khác
+> docker compose -p day6_student_starter up -d --wait
+> python scripts/check_setup.py
+> python -m src.run                      # ingest -> kiểm evidence -> chunk A/B -> embed -> pgvector -> top-3 -> metrics
+> ```
+> Dữ liệu gốc nằm ở `starter/data/raw/`. Pipeline sinh ra manifest và các đơn vị trang trong `data/`, kết quả trong `results/` (trace, metric, audit; nhãn thủ công là các file `labels_*.csv`, không bị ghi đè khi chạy lại). Cấu hình A/B/C có ở `starter/src/run.py` (`STRATEGIES`) và [artifacts/experiment_log.csv](artifacts/experiment_log.csv). Bộ câu hỏi ở [benchmark/questions.json](benchmark/questions.json). Lần đầu chạy cần mạng để tải model (khoảng 130 MB). Toàn bộ chạy local nên chi phí 0 USD.
+
 **Lab cá nhân** · **4 giờ** · **Dữ liệu tự chọn**
 
 Biến tài liệu thành kho tri thức có thể truy xuất cho AI agent, rồi đo xem cách chuẩn bị dữ liệu nào hiệu quả nhất.

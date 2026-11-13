@@ -1,0 +1,21 @@
+{
+  "A": {
+    "rows_before": 453,
+    "rows_after_second_upsert": 453,
+    "obsolete_deleted": 0,
+    "no_duplicates": true
+  },
+  "B": {
+    "rows_before": 425,
+    "rows_after_second_upsert": 425,
+    "obsolete_deleted": 0,
+    "no_duplicates": true
+  },
+  "changed_document_simulation": {
+    "first_upsert_rows": 3,
+    "written": 2,
+    "obsolete_deleted": 1,
+    "rows_now": 2,
+    "ok": true
+  }
+}
